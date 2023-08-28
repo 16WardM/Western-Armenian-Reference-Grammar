@@ -1,7 +1,7 @@
 Font License
 ﻿With this license any person acquires right to obtain (download or copy) and use free
-of charge the Arian AMU fonts (hereinafter “The Fonts”). Everyone withoutany limitations
-can copy, use and disseminate the Fonts. However the following conditionsmust be met:
+of charge the Arian AMU fonts (hereinafter “The Fonts”). Everyone without any limitations
+can copy, use and disseminate the Fonts. However the following conditions must be met:
 
 this permission must be included in any copy, even if it is a file representing one style;
 the Font can be changed or complemented with additional characters, however their title
