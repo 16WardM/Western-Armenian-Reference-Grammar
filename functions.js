@@ -12,5 +12,21 @@ const textBox = document.getElementById("numberInput");
 textBox.addEventListener("keydown", function(event) {
 	if (event.keyCode === 13) {
 		redirectToSection();
+		document.getElementById('numberInput').value = '';
 	}
 })
+
+function scrollToTop() {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+window.addEventListener('scroll', function() {
+	const scrollToTopButton = document.getElementById('scrollToTop');
+	if (scrollToTopButton.style) {
+		if (window.scrollY > 10) {
+			scrollToTopButton.style.display = 'block';
+		} else {
+			scrollToTopButton.style.display = 'none';
+		}
+	}
+});
