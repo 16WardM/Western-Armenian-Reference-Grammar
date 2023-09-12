@@ -17,16 +17,28 @@ textBox.addEventListener("keydown", function(event) {
 })
 
 function scrollToTop() {
+	window.location.href = ''
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 window.addEventListener('scroll', function() {
 	const scrollToTopButton = document.getElementById('scrollToTop');
 	if (scrollToTopButton.style) {
-		if (window.scrollY > 10) {
+		if (window.scrollY > 400) {
 			scrollToTopButton.style.display = 'block';
 		} else {
 			scrollToTopButton.style.display = 'none';
 		}
 	}
 });
+
+function setButtonWidth() {
+	var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+	var button = document.querySelector("#scrollToTop");
+	var widthPercentage = 10;
+	var buttonWidth = (screenHeight * widthPercentage) / 100;
+	button.style.width = buttonWidth + "px";
+}
+
+window.addEventListener("load", setButtonWidth);
+window.addEventListener("resize", setButtonWidth);
