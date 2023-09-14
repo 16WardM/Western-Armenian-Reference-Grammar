@@ -1,7 +1,8 @@
 function redirectToSection() {
     var number = document.getElementById('numberInput').value;
     if (!isNaN(number) && number !== '' && number >= 1 && number <= 730) {
-        window.location.href = '#section%20' + number;
+		window.location.href = '#section%20' + number;
+		document.getElementById('numberInput').value = '';
     } else {
         alert('Please enter a valid number between 1 and 730.');
     }
