@@ -17,7 +17,6 @@ textBox.addEventListener("keydown", function(event) {
 })
 
 function scrollToTop() {
-	window.location.href = ''
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
