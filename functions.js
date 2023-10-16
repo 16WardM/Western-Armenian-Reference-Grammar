@@ -40,5 +40,30 @@ function setButtonWidth() {
 	button.style.width = buttonWidth + "px";
 }
 
+function openNav() {
+  document.getElementById("mySidenav").removeAttribute("hidden");
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").setAttribute("hidden", "hidden");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var myDiv = document.getElementById("mySidenav");
+	var showButton = document.getElementById("contentsbtn");
+	document.addEventListener("click", function(event) {
+        if (!myDiv.hidden) {
+            var targetElement = event.target;
+            do {
+                if (targetElement == myDiv || targetElement == showButton) {
+                    return;
+                }
+                targetElement = targetElement.parentNode;
+            } while (targetElement);
+            myDiv.hidden = true;
+        }
+    });
+});
+
 window.addEventListener("load", setButtonWidth);
 window.addEventListener("resize", setButtonWidth);
