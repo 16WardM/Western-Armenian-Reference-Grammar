@@ -1761,7 +1761,9 @@ table td,table th{
 .c120{
 	background-color: #ffffff;
 	max-width: 100%;
-	padding: 0pt 72pt 72pt 72pt;
+	padding: 0pt 72pt 72pt 100pt;
+	font-family: "Arial";
+	font-style: normal;
 }
 
 .c57{
@@ -1782,6 +1784,7 @@ table td,table th{
 .c11{
 	color: inherit;
 	text-decoration: inherit;
+	width: 100%;
 }
 
 .c34{
@@ -2041,4 +2044,92 @@ h6{
 
 #numberInputButton {
 	width: 10%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 50%; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.contents-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #808080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropbtn {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
 }
