@@ -2017,7 +2017,7 @@ h6{
 
 @font-face {
 	font-family: "Arian Serif";
-	src: url("arnamu-serif.woff") format("woff");
+	src: url("../assets/arnamu-serif.woff") format("woff");
 }
 
 .armenian{
