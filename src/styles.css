@@ -8,6 +8,11 @@ table th {
   padding: 0;
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .c81 {
   border-right-style: solid;
   padding: 5pt 5pt 5pt 5pt;
