@@ -1805,6 +1805,10 @@ table {
   margin-left: 36pt;
 }
 
+table.c8 {
+  margin-left: auto;
+}
+
 .c26 {
   vertical-align: super;
 }
