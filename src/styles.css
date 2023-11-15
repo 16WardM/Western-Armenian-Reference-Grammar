@@ -2151,7 +2151,6 @@ h6 {
 .hover {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted;
   text-indent: 0pt;
 }
 
