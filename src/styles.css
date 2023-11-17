@@ -1766,9 +1766,15 @@ table {
 .c120 {
   background-color: #ffffff;
   max-width: 100%;
-  padding: 72pt 25% 72pt 25%;
+  padding: 0pt
   font-family: "Arial";
   font-style: normal;
+}
+
+@media (min-width: 600px) {
+	.c120 {
+		padding: 72pt 25% 72pt 25%;
+	}
 }
 
 .c57 {
@@ -2052,7 +2058,7 @@ h6 {
 }
 
 #numberInputButton {
-  width: 10%;
+  width: fit-content;
 }
 
 .sidenav {
@@ -2157,9 +2163,12 @@ h6 {
 .hover:hover::after {
   content: attr(hover-text);
   display: block;
+  font-family: "Arial";
+  font-style: normal;
   position: absolute;
   background-color: white;
   border: 1px solid grey;
+  width: fit-content;
   padding: 5px;
   z-index: 1;
 }
