@@ -2096,7 +2096,7 @@ h6 {
   padding: 20px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 1100x) {
   .sidenav {
     padding-top: 15px;
   }
