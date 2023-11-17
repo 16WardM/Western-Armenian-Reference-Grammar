@@ -1766,12 +1766,12 @@ table {
 .c120 {
   background-color: #ffffff;
   max-width: 100%;
-  padding: 72pt 5% 72pt 5%;
+  padding: 0pt
   font-family: "Arial";
   font-style: normal;
 }
 
-@media screen and min-width: 1500px) {
+@media (min-width: 600px) {
 	.c120 {
 		padding: 72pt 25% 72pt 25%;
 	}
@@ -2113,6 +2113,8 @@ h6 {
   margin: 10px;
   padding: 10px 20px;
   background-color: #808080;
+  font-family: "Arial";
+  font-style: normal;
   color: white;
   border: none;
   border-radius: 5px;
