@@ -1771,7 +1771,7 @@ table {
   font-style: normal;
 }
 
-@media screen and min-width: 1250px) {
+@media screen and min-width: 600px) {
 	.c120 {
 		padding: 72pt 25% 72pt 25%;
 	}
