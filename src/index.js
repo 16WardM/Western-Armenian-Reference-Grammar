@@ -57,3 +57,15 @@ function closeNav() {
   navigationPanel.setAttribute("hidden", "hidden");
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('toggleButton');
+  const bodyContainer = document.querySelector('.doc-content');
+
+  toggleButton.addEventListener('change', function () {
+    if (toggleButton.checked) {
+      bodyContainer.classList.remove('hide-hover');
+    } else {
+      bodyContainer.classList.add('hide-hover');
+    }
+  });
+});

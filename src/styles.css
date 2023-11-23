@@ -2181,3 +2181,67 @@ h6 {
   padding: 5px;
   z-index: 1;
 }
+
+.hide-hover .hover:hover::after {
+  content: attr(hover-text);
+  display: none;
+}
+
+.slider-container {
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#toggleButton:checked + .slider {
+  background-color: #2196F3;
+}
+
+#toggleButton:checked + .slider::before {
+  transform: translateX(30px);
+}
+
+#toggleButton:checked + .slider + .box .hover-effect::after {
+  display: block;
+}
+
+#toggleButton:not(:checked) + .slider + .box .hover-effect::after {
+  display: none;
+}
+
+.sliderDiv {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 10px 20px;
+  font-family: "Arial";
+  font-style: normal;
+  border: none;
+}
