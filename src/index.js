@@ -6,6 +6,10 @@ const inputField = document.getElementById('numberInput');
 const navigationPanel = document.getElementById("mySidenav");;
 const navigationPanelButton = document.getElementById("contentsbtn");
 
+
+const toggleButton = document.getElementById('toggleButton');
+const bodyContainer = document.querySelector('.doc-content');
+
 document.addEventListener("click", (event) => {
   if (navigationPanel.hidden) return; 
 
@@ -58,8 +62,6 @@ function closeNav() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const toggleButton = document.getElementById('toggleButton');
-  const bodyContainer = document.querySelector('.doc-content');
 
   toggleButton.addEventListener('change', function () {
     if (toggleButton.checked) {
