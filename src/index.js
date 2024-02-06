@@ -45,7 +45,8 @@ inputField.addEventListener("keydown", (event) => {
 function redirectToSection() {
   const index = Number(inputField.value);
   if (!(Number.isSafeInteger(index) && index >= MIN_SECTION && index <= MAX_SECTION)) {
-    alert(`Please enter a valid number between ${MIN_SECTION} and ${MAX_SECTION}.`);
+	showCustomAlert(`Please enter a valid number between ${MIN_SECTION} and ${MAX_SECTION}.`)
+	inputField.value = '';
     return;
   }
 
@@ -62,7 +63,7 @@ function closeNav() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-
+	
   toggleButton.addEventListener('change', function () {
     if (toggleButton.checked) {
       bodyContainer.classList.remove('hide-hover');
@@ -71,3 +72,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+function showCustomAlert(alertMessage) {
+  var modal = document.getElementById("customAlert");
+  var messageElement = document.getElementById("alertMessage");
+  messageElement.textContent = alertMessage;
+
+  modal.style.display = "block";
+}
+
+function hideCustomAlert() {
+  var modal = document.getElementById("customAlert");
+  modal.style.display = "none";
+}
